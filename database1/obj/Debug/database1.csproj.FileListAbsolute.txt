@@ -1,0 +1,13 @@
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\database1.exe.config
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\database1.exe
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\database1.pdb
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\obj\Debug\database1.csprojResolveAssemblyReference.cache
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\obj\Debug\database1.Form1.resources
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\obj\Debug\database1.Properties.Resources.resources
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\obj\Debug\database1.csproj.GenerateResource.Cache
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\obj\Debug\database1.exe
+c:\users\brudan-oana\documents\visual studio 2013\Projects\database1\database1\obj\Debug\database1.pdb
+C:\Users\Brudan-Oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Brudan-Oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Brudan-Oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Brudan-Oana\documents\visual studio 2013\Projects\database1\database1\bin\Debug\MySql.Data.Entity.EF6.xml
