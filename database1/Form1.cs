@@ -101,10 +101,21 @@ namespace database1
 
         private void btnDeleteStudent_Click(object sender, EventArgs e)
         {
-            gridStudents.Rows.RemoveAt(gridStudents.CurrentRow.Index);
-           // this.bookingTableAdapter.Update(this.usersDataSet.Booking);
-        }
+            try
+            {
+                Student student = RetrieveStudentInformation();
 
+                IDBManager db = new MySQLDBManager();
+                db.DeleteStudent(student);
+                EmptyControls();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                throw;
+            }
+        }
+//
         private void gridStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         

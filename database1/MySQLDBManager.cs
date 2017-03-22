@@ -70,17 +70,18 @@ namespace database1
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "UpdateStudent";
+                cmd.CommandText = "UPDATE student SET name = @name, birthdate = @birthdate, address= @address  WHERE id = @id;";
 
-                cmd.Parameters.Add(new MySqlParameter("StudentID", student.ID));
-                cmd.Parameters.Add(new MySqlParameter("StudentName", student.Name));
-                cmd.Parameters.Add(new MySqlParameter("StudentBirthDate", student.BirthDate));
-                cmd.Parameters.Add(new MySqlParameter("StudentAddress", student.Address));
+                cmd.Prepare();
 
+                cmd.Parameters.AddWithValue("@id", student.ID);
+                cmd.Parameters.AddWithValue("@name", student.Name);
+                cmd.Parameters.AddWithValue("@birthdate", student.BirthDate);
+                cmd.Parameters.AddWithValue("@address", student.Address);
                 cmd.ExecuteNonQuery();
             }
         }
+
 
         public void DeleteStudent(Student student)
         {
@@ -89,14 +90,17 @@ namespace database1
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "DELETE FROM student(id) VALUES(@id)";
-                //cmd.Prepare();
+                cmd.CommandText = "DELETE FROM student WHERE id=@id";
+                cmd.Prepare();
 
-                cmd.Parameters.AddWithValue("@id", 1);
-                
+                cmd.Parameters.AddWithValue("@id", student.ID);
+                cmd.Parameters.AddWithValue("@name", student.Name);
+                cmd.Parameters.AddWithValue("@birthdate", student.BirthDate);
+                cmd.Parameters.AddWithValue("@address", student.Address);
                 cmd.ExecuteNonQuery();
             }
-            }
         }
+
     }
+}
 
